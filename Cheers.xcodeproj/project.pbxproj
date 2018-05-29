@@ -33,6 +33,7 @@
 		72D45BE12084364100E06918 /* DowntownGaslampBars.txt in Resources */ = {isa = PBXBuildFile; fileRef = 72D45BE02084364100E06918 /* DowntownGaslampBars.txt */; };
 		72D9951520A3F29100D4782F /* RideShareMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D9951420A3F29100D4782F /* RideShareMenu.xib */; };
 		72D9951720A3F2C100D4782F /* RideShareMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D9951620A3F2C100D4782F /* RideShareMenu.swift */; };
+		72E6107E20BCEB69005CA109 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72E6107D20BCEB69005CA109 /* GoogleService-Info.plist */; };
 		72F357E920A730FB0023E7EC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F357E820A730FB0023E7EC /* HistoryViewController.swift */; };
 		9A0A86FE11A77BD7A74EBA63 /* Pods_Cheers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46CB7E3BE7DAFDFD4F6DD4E /* Pods_Cheers.framework */; };
 		B1053DC1208D5BDF00394370 /* MinimumRatingFilterOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1053DC0208D5BDF00394370 /* MinimumRatingFilterOptionCell.swift */; };
@@ -45,7 +46,6 @@
 		B1C20A612051EF6500ECB998 /* shout.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1C20A602051EF6500ECB998 /* shout.jpg */; };
 		B1FF310F20720A33001DF2DF /* UserLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FF310E20720A33001DF2DF /* UserLocations.swift */; };
 		B1FF31152072DE84001DF2DF /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FF31142072DE84001DF2DF /* ImageLoader.swift */; };
-		B1FFE6AB205B69F500531FDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1FFE6AA205B69F500531FDB /* GoogleService-Info.plist */; };
 		B1FFE6AD205B6F7200531FDB /* Neighborhoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FFE6AC205B6F7200531FDB /* Neighborhoods.swift */; };
 		BE500C6720619CD1006F4FD0 /* BarNames.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE500C6620619CD1006F4FD0 /* BarNames.txt */; };
 		BE8EF5B1207539BF0088F098 /* SharedListsSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8EF5B0207539BF0088F098 /* SharedListsSingleton.swift */; };
@@ -115,6 +115,7 @@
 		72D45BE02084364100E06918 /* DowntownGaslampBars.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DowntownGaslampBars.txt; sourceTree = "<group>"; };
 		72D9951420A3F29100D4782F /* RideShareMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RideShareMenu.xib; sourceTree = "<group>"; };
 		72D9951620A3F2C100D4782F /* RideShareMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideShareMenu.swift; sourceTree = "<group>"; };
+		72E6107D20BCEB69005CA109 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		72F357E820A730FB0023E7EC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		7510546D200EA9295116FBC0 /* Pods_CheersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FDF68A309F93D49B4568F8 /* Pods-Cheers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cheers/Pods-Cheers.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,7 +131,6 @@
 		B1C20A602051EF6500ECB998 /* shout.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shout.jpg; sourceTree = "<group>"; };
 		B1FF310E20720A33001DF2DF /* UserLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocations.swift; sourceTree = "<group>"; };
 		B1FF31142072DE84001DF2DF /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		B1FFE6AA205B69F500531FDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B1FFE6AC205B6F7200531FDB /* Neighborhoods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neighborhoods.swift; sourceTree = "<group>"; };
 		BE500C6620619CD1006F4FD0 /* BarNames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BarNames.txt; sourceTree = "<group>"; };
 		BE8EF5B0207539BF0088F098 /* SharedListsSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedListsSingleton.swift; sourceTree = "<group>"; };
@@ -375,8 +375,8 @@
 				66D3EDFB20730BC3003A9CB0 /* happyhours.txt */,
 				BE500C6620619CD1006F4FD0 /* BarNames.txt */,
 				B10E20B92054AF88005E37BE /* BarInfoCheersApp.txt */,
+				72E6107D20BCEB69005CA109 /* GoogleService-Info.plist */,
 				B1C20A602051EF6500ECB998 /* shout.jpg */,
-				B1FFE6AA205B69F500531FDB /* GoogleService-Info.plist */,
 				BEA1B46E204F34AF00136463 /* Info.plist */,
 			);
 			path = Cheers;
@@ -515,7 +515,7 @@
 			files = (
 				726E34F520A3082B00865189 /* SelectedPlace.xib in Resources */,
 				BEA1B46D204F34AF00136463 /* LaunchScreen.storyboard in Resources */,
-				B1FFE6AB205B69F500531FDB /* GoogleService-Info.plist in Resources */,
+				72E6107E20BCEB69005CA109 /* GoogleService-Info.plist in Resources */,
 				BE500C6720619CD1006F4FD0 /* BarNames.txt in Resources */,
 				B10E20BA2054AF88005E37BE /* BarInfoCheersApp.txt in Resources */,
 				72D45BE12084364100E06918 /* DowntownGaslampBars.txt in Resources */,
