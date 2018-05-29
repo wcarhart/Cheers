@@ -11,7 +11,7 @@ target 'Cheers' do
   # database
   pod 'Firebase/Database'
   pod 'Firebase/Core'
-  #pod 'Firebase', '>= 2.5.1'
+  pod 'Firebase', '>= 2.5.1'
   
   # Date/Time Management
   pod 'SwiftDate', '~> 4.5.1'
