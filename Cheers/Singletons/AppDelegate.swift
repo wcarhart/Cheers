@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         
         // set up Lyft API
         LyftConfiguration.developer = (
-            token: "QqBquxy3I6dOq/12Qd9LWGt0yhNtYeozqWaUq/AcZM/19ULc8M0SkM6tpHYRNLrBXqKpMyIT9hBqIbMPaLmQIe3tzjc83x6PLHfQDEtF3zCMPQzeGTMewQA=",
+            token: "pJCW9Vkz1bN3aDrXSyawToTKb+fQ+ArxJJgcFXHWYGkY0CL88hl92/WuqurGkq9ku9L9UoQa+IXaxMztANEi62/x5sUULwC6MlQdLxeSoX8Y5ssf3ycu/ks=",
             clientId: "GfL8zotV5-nr"
         )
         
