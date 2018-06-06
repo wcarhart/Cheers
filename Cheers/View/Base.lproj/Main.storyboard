@@ -35,18 +35,26 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMy-7C-tXQ" userLabel="Mon1">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvt-hj-bdB">
-                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
-                                                                <connections>
-                                                                    <action selector="mon1ButtonPressed:" destination="mcu-7m-qrQ" eventType="touchUpInside" id="xEQ-WB-KvZ"/>
-                                                                </connections>
-                                                            </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3OP-OT-1ce" userLabel="Cell Content">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EM1-5a-kwI" userLabel="Left">
                                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="88"/>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvt-hj-bdB">
+                                                                                <rect key="frame" x="0.0" y="-0.5" width="125" height="88"/>
+                                                                                <connections>
+                                                                                    <action selector="mon1ButtonPressed:" destination="mcu-7m-qrQ" eventType="touchUpInside" id="xEQ-WB-KvZ"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                        </subviews>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="mvt-hj-bdB" firstAttribute="leading" secondItem="EM1-5a-kwI" secondAttribute="leading" id="Dzv-Ds-Zt8"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="mvt-hj-bdB" secondAttribute="trailing" id="JPr-7R-6YF"/>
+                                                                            <constraint firstItem="mvt-hj-bdB" firstAttribute="top" secondItem="EM1-5a-kwI" secondAttribute="top" id="ewE-wW-93x"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="mvt-hj-bdB" secondAttribute="bottom" id="lhT-AC-95P"/>
+                                                                        </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hd-94-AlN" userLabel="Center">
                                                                         <rect key="frame" x="125" y="0.0" width="125" height="88"/>
@@ -54,10 +62,20 @@
                                                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwd-is-an2">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="88"/>
                                                                             </pickerView>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fx-e1-fZS">
+                                                                                <rect key="frame" x="0.0" y="70.5" width="125" height="17.5"/>
+                                                                                <connections>
+                                                                                    <action selector="mon1StartAMPMButtonPressed:" destination="mcu-7m-qrQ" eventType="touchUpInside" id="eMv-lD-PmU"/>
+                                                                                </connections>
+                                                                            </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
+                                                                            <constraint firstItem="7Fx-e1-fZS" firstAttribute="height" secondItem="7hd-94-AlN" secondAttribute="height" multiplier="1:5" id="2d1-ew-tWR"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="7Fx-e1-fZS" secondAttribute="bottom" id="49q-pf-0gz"/>
                                                                             <constraint firstItem="dwd-is-an2" firstAttribute="top" secondItem="7hd-94-AlN" secondAttribute="top" id="4Kt-kW-aPA"/>
+                                                                            <constraint firstItem="7Fx-e1-fZS" firstAttribute="leading" secondItem="7hd-94-AlN" secondAttribute="leading" id="7Yy-2E-EDv"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="7Fx-e1-fZS" secondAttribute="trailing" id="bD6-6e-GFy"/>
                                                                             <constraint firstItem="dwd-is-an2" firstAttribute="leading" secondItem="7hd-94-AlN" secondAttribute="leading" id="hnD-89-jOf"/>
                                                                             <constraint firstAttribute="trailing" secondItem="dwd-is-an2" secondAttribute="trailing" id="rXv-qs-80w"/>
                                                                             <constraint firstAttribute="bottom" secondItem="dwd-is-an2" secondAttribute="bottom" id="uJv-IH-txs"/>
@@ -69,13 +87,24 @@
                                                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nz1-Ma-mSx">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="88"/>
                                                                             </pickerView>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuA-Zu-2De">
+                                                                                <rect key="frame" x="0.0" y="70.5" width="125" height="17.5"/>
+                                                                                <state key="normal" title="Button"/>
+                                                                                <connections>
+                                                                                    <action selector="mon1EndAMPMButtonPressed:" destination="mcu-7m-qrQ" eventType="touchUpInside" id="lNe-ce-HKS"/>
+                                                                                </connections>
+                                                                            </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="trailing" secondItem="nz1-Ma-mSx" secondAttribute="trailing" id="2Qc-pK-ynl"/>
                                                                             <constraint firstAttribute="bottom" secondItem="nz1-Ma-mSx" secondAttribute="bottom" id="2Td-dm-u4W"/>
+                                                                            <constraint firstItem="CuA-Zu-2De" firstAttribute="leading" secondItem="egT-ZQ-q9s" secondAttribute="leading" id="34Y-eA-gN7"/>
                                                                             <constraint firstItem="nz1-Ma-mSx" firstAttribute="top" secondItem="egT-ZQ-q9s" secondAttribute="top" id="SC8-eL-19A"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="CuA-Zu-2De" secondAttribute="trailing" id="TRk-bP-OcE"/>
                                                                             <constraint firstItem="nz1-Ma-mSx" firstAttribute="leading" secondItem="egT-ZQ-q9s" secondAttribute="leading" id="ZS7-WL-OoS"/>
+                                                                            <constraint firstItem="CuA-Zu-2De" firstAttribute="height" secondItem="egT-ZQ-q9s" secondAttribute="height" multiplier="1:5" id="gKY-vh-7Pp"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="CuA-Zu-2De" secondAttribute="bottom" id="tbW-Q4-Xqp"/>
                                                                         </constraints>
                                                                     </view>
                                                                 </subviews>
@@ -99,14 +128,10 @@
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="3OP-OT-1ce" secondAttribute="trailing" id="A7a-yG-qYK"/>
-                                                            <constraint firstItem="mvt-hj-bdB" firstAttribute="top" secondItem="JMy-7C-tXQ" secondAttribute="top" id="Fdq-w1-A8y"/>
-                                                            <constraint firstItem="mvt-hj-bdB" firstAttribute="leading" secondItem="JMy-7C-tXQ" secondAttribute="leading" id="HHJ-q1-UY2"/>
                                                             <constraint firstAttribute="height" constant="88" id="Tbf-g0-eWH"/>
                                                             <constraint firstAttribute="bottom" secondItem="3OP-OT-1ce" secondAttribute="bottom" id="juy-6F-m0z"/>
                                                             <constraint firstItem="3OP-OT-1ce" firstAttribute="top" secondItem="JMy-7C-tXQ" secondAttribute="top" id="jxg-jq-2Yw"/>
-                                                            <constraint firstAttribute="trailing" secondItem="mvt-hj-bdB" secondAttribute="trailing" id="r4W-CH-gS3"/>
                                                             <constraint firstItem="3OP-OT-1ce" firstAttribute="leading" secondItem="JMy-7C-tXQ" secondAttribute="leading" id="vEK-47-JtC"/>
-                                                            <constraint firstAttribute="bottom" secondItem="mvt-hj-bdB" secondAttribute="bottom" id="y16-fp-c6u"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRz-Xl-bcj" userLabel="Mon2">
@@ -282,7 +307,9 @@
                     </view>
                     <connections>
                         <outlet property="contentView" destination="HRZ-kt-1Ka" id="2bl-tW-Kv7"/>
+                        <outlet property="mon1EndAMPM" destination="CuA-Zu-2De" id="ZoF-Ze-CMW"/>
                         <outlet property="mon1EndTime" destination="nz1-Ma-mSx" id="2ru-SW-IdY"/>
+                        <outlet property="mon1StartAMPM" destination="7Fx-e1-fZS" id="3fX-H1-6uT"/>
                         <outlet property="mon1StartTime" destination="dwd-is-an2" id="dEB-Fp-WNf"/>
                         <outlet property="scrollView" destination="SdH-qJ-jmJ" id="pnD-UJ-QbL"/>
                     </connections>
