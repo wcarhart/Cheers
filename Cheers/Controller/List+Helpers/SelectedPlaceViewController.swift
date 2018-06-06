@@ -428,10 +428,14 @@ class SelectedPlaceViewController: UIViewController {
     
     @objc func addButtonPressed() {
         print("add")
+        // TODO: debug this
+        performSegue(withIdentifier: "editHappyHours", sender: nil)
     }
     
     @objc func reportButtonPressed() {
         print("report")
+        // TODO: debug this
+        performSegue(withIdentifier: "editHappyHours", sender: nil)
     }
     
     @objc func showMoreButtonPressed() {

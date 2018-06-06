@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33A372DB209A2CB00076F051 /* SortFilterOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A372DA209A2CB00076F051 /* SortFilterOptionCell.swift */; };
 		53B8AB51ECE9E0A4AD635A77 /* Pods_CheersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7510546D200EA9295116FBC0 /* Pods_CheersUITests.framework */; };
+		720A98FA20C79B390026C832 /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A98F920C79B390026C832 /* UserInputViewController.swift */; };
 		72189A4A20A506C500D7CA33 /* BubblesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72189A4920A506C500D7CA33 /* BubblesScene.swift */; };
 		72189A4C20A5070100D7CA33 /* BubbleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72189A4B20A5070100D7CA33 /* BubbleNode.swift */; };
 		72189A4F20A508A900D7CA33 /* SIFloatingCollectionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72189A4E20A508A900D7CA33 /* SIFloatingCollectionScene.swift */; };
@@ -86,6 +87,7 @@
 		2010BDD9FF669BDD3D11AC9E /* Pods-CheersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheersUITests/Pods-CheersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		33A372DA209A2CB00076F051 /* SortFilterOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortFilterOptionCell.swift; sourceTree = "<group>"; };
 		3FFE80B91BF7B44C17B2D247 /* Pods-CheersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheersTests/Pods-CheersTests.release.xcconfig"; sourceTree = "<group>"; };
+		720A98F920C79B390026C832 /* UserInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewController.swift; sourceTree = "<group>"; };
 		72189A4920A506C500D7CA33 /* BubblesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubblesScene.swift; sourceTree = "<group>"; };
 		72189A4B20A5070100D7CA33 /* BubbleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleNode.swift; sourceTree = "<group>"; };
 		72189A4E20A508A900D7CA33 /* SIFloatingCollectionScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIFloatingCollectionScene.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				726E34F620A3096D00865189 /* SelectedPlace.swift */,
 				72189A5820A6056B00D7CA33 /* EmptyView.swift */,
 				728D127720A681DC00647E06 /* PlaceTableViewCell.swift */,
+				720A98F920C79B390026C832 /* UserInputViewController.swift */,
 			);
 			path = "List+Helpers";
 			sourceTree = "<group>";
@@ -688,6 +691,7 @@
 				B1FFE6AD205B6F7200531FDB /* Neighborhoods.swift in Sources */,
 				72A8630020A63AAF00D3C16F /* FavoritesViewController.swift in Sources */,
 				B15524FE2086ECA40077323B /* FilterViewController.swift in Sources */,
+				720A98FA20C79B390026C832 /* UserInputViewController.swift in Sources */,
 				B15ACF5D208197320052C4CB /* FilterMenu.swift in Sources */,
 				BEC473AD20510B7C00FC5702 /* Place.swift in Sources */,
 				BEF309A62061AA3200022098 /* BarType.swift in Sources */,
