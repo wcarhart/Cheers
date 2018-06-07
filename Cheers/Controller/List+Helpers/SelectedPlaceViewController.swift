@@ -90,6 +90,7 @@ class SelectedPlaceViewController: UIViewController {
     }
     
     @objc func slidePhotos() {
+        // TODO: see GitHub issue #33
         /*
         var index = self.selectedPlaceView.imageViewPageControl.currentPage + 1
         index = index % self.photos.count
