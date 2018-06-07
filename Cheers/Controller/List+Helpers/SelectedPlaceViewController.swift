@@ -90,6 +90,7 @@ class SelectedPlaceViewController: UIViewController {
     }
     
     @objc func slidePhotos() {
+        /*
         var index = self.selectedPlaceView.imageViewPageControl.currentPage + 1
         index = index % self.photos.count
         self.selectedPlaceView.imageViewPageControl.currentPage = index
@@ -98,7 +99,7 @@ class SelectedPlaceViewController: UIViewController {
         UIView.transition(with: self.selectedPlaceView.imageView, duration: 0.5, options: .transitionCrossDissolve, animations: {
             self.selectedPlaceView.imageViewImage.image = newImage
         }, completion: nil)
-        
+        */
     }
     
     func configureContent() {
