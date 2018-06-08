@@ -13,6 +13,14 @@ class UserInputViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
     
+    var enabledMonday: Bool = false
+    var enabledTuesday: Bool = false
+    var enabledWednesday: Bool = false
+    var enabledThursday: Bool = false
+    var enabledFriday: Bool = false
+    var enabledSaturday: Bool = false
+    var enabledSunday: Bool = false
+    
     // monday 1 outlets
     @IBOutlet weak var mon1StartPicker: UIPickerView!
     @IBOutlet weak var mon1EndPicker: UIPickerView!
@@ -108,6 +116,10 @@ class UserInputViewController: UIViewController {
         mon2EndButton.titleLabel?.font = UIFont(name: "AppleSDGothicNeo-Light", size: 17.0)
     }
     
+    func updateDaySliders() {
+        
+    }
+    
     @IBAction func mon1PrimaryButtonPressed(_ sender: UIButton) {
         UIView.animate(withDuration: 0.2, animations: {
             self.mon1Label.frame = self.mon1LeftView.bounds
@@ -172,7 +184,6 @@ class UserInputViewController: UIViewController {
         UIView.animate(withDuration: 0.2, animations: {
             self.mon2Label.frame = self.mon1LeftView.bounds
             self.mon2Label.backgroundColor = FlatGreen()
-            print("here")
         }) { (_) in
             self.mon2PrimaryButton.isHidden = true
             self.mon2SecondaryButton.isHidden = false
@@ -211,9 +222,8 @@ class UserInputViewController: UIViewController {
             
             self.mon2Label.frame = self.mon1CenterView.frame
             self.mon2Label.backgroundColor = enabled ? FlatYellow() : FlatGray()
-            print("here3")
         }) { (_) in
-            self.mon2PrimaryButton.isHidden = false
+            self.mon2PrimaryButton.isHidden = enabled ? false : true
             self.mon2SecondaryButton.isHidden = true
             
             self.mon2StartPicker.isHidden = false
